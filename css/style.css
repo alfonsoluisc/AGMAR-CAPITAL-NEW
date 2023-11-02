@@ -358,9 +358,7 @@ h1, h2, h3, h4, h5, h6 {
   #mobile-nav-toggle {
     display: inline;
   }
-  .video video {
-    width: 100%;
-  }
+  
   
 }
 
@@ -456,6 +454,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Sections Common
 --------------------------------*/
 .section-title {
+
   font-size: 32px;
   color: #111;
   text-transform: uppercase;
@@ -874,20 +873,33 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*Documentos html*/
 
-.video video{
- 
-  position: relative;
-  object-fit: contain;
-  padding: 5px;
-  top: 0;  
-  right: 0;
-  bottom: 0;
-  left: 0;
-  max-width: 200%;
-  max-height: 200%;  
-  margin: auto;
- 
+.video-box{
+
+  border: 1px solid #03c4eb;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  margin: 100px auto 0; 
+  
  }
+.video {
+  padding: 20px;
+  
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.sub_title-video{
+  padding: 10px;
+  font-weight: 700;
+  color: #03c4eb;
+  margin-bottom: 5px;
+  text-align: center;
+  
+}
 
 .col-md-9_documentos{
   position: relative;
