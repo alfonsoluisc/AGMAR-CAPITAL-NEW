@@ -6,6 +6,7 @@ body {
   color: #666666;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+ 
 }
 
 a {
@@ -84,14 +85,30 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../img/hero-bg.jpg) top center fixed;
   background-size: cover;
 }
+#hero2 {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/4.jpeg) top center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
 
 #hero .hero-logo {
+  margin: 20px;
+}
+#hero2 .hero-logo {
   margin: 20px;
 }
 
 #hero .hero-logo img {
   max-width: 100%;
 }
+#hero2 .hero-logo img {
+  max-width: 100%;
+}
+
 
 #hero .hero-container {
   background: rgba(0, 0, 0, 0.8);
@@ -101,8 +118,23 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   vertical-align: middle;
 }
+#hero2 .hero-container {
+  background: rgba(0, 0, 0, 0.8);
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
 
 #hero h1 {
+  margin: 30px 0 10px 0;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #fff;
+}
+#hero2 h1 {
   margin: 30px 0 10px 0;
   font-weight: 700;
   line-height: 48px;
@@ -121,6 +153,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #999;
   margin-bottom: 50px;
 }
+#hero2 h2 {
+  color: #999;
+  margin-bottom: 50px;
+}
 
 @media (max-width: 768px) {
   #hero h2 {
@@ -128,7 +164,15 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 26px;
     margin-bottom: 30px;
   }
+  #hero2 h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
   #hero h2 .rotating {
+    display: block;
+  }
+  #hero2 h2 .rotating {
     display: block;
   }
 }
@@ -136,8 +180,23 @@ h1, h2, h3, h4, h5, h6 {
 #hero .rotating > .animated {
   display: inline-block;
 }
+#hero2 .rotating > .animated {
+  display: inline-block;
+}
 
 #hero .actions a {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+}
+#hero2 .actions a {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -155,8 +214,19 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #03C4EB;
   color: #fff;
 }
+#hero2 .btn-get-started {
+  background: #03C4EB;
+  border: 2px solid #03C4EB;
+  color: #fff;
+}
+
 
 #hero .btn-get-started:hover {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+}
+#hero2 .btn-get-started:hover {
   background: none;
   border: 2px solid #fff;
   color: #fff;
@@ -166,12 +236,19 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #fff;
   color: #fff;
 }
+#hero2 .btn-services {
+  border: 2px solid #fff;
+  color: #fff;
+}
 
 #hero .btn-services:hover {
   background: #03C4EB;
   border: 2px solid #03C4EB;
 }
-
+#hero2 .btn-services:hover {
+  background: #03C4EB;
+  border: 2px solid #03C4EB;
+}
 .vinculo_tecnologia{
   position: relative;
   text-align: center;
@@ -615,8 +692,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .service-description {
   margin-left: 80px;
+  margin-right: 10px;
   line-height: 24px;
+  text-align: justify;
 }
+
 
 /* Subscribe Section
 --------------------------------*/
@@ -666,6 +746,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #portfolio {
   background: #fff;
   padding: 80px 0;
+  margin: 25px;
+   
 }
 
 #portfolio .portfolio-item {
@@ -686,6 +768,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #fff;
   display: table-cell;
   vertical-align: middle;
+  overflow: hidden;
   opacity: 0;
   transition: 0.3s;
   text-align: center;
@@ -728,6 +811,101 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+
+@media (max-width:991px){
+  #portfolio {
+    max-width: 90%;
+    margin: 5px;
+    margin-left: 20px;
+    padding: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+  }
+}
+
+.content-icons{
+  display: block;
+  box-sizing:content-box;
+  overflow: hidden;
+  margin: 15px;
+  padding: 10px;
+  max-height: 150px;
+  width: 95%;
+  text-align-last: justify;
+}
+
+@media (max-width:991px){
+  .content-icons{
+    display: flex;
+    box-sizing:content-box;
+    overflow: hidden;
+    margin: 15px;
+    padding: 10px;
+    max-height: 550px;
+    width: 80%;
+    text-align-last: justify;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  .icono-tecno2 {
+    padding-top: 15px;
+  }
+  
+}
+
+.icono-tecno {
+  width: 150px;
+  height: 150px;
+  padding: auto;
+  margin: 5px;
+}
+.icono-tecno2 {
+  width: 91px;
+  height: 73px;
+  padding: auto;
+  margin: 5px;
+}
+
+.icono-tecno3 {
+  width: 130px;
+  height: 80px;
+  padding: auto;
+  margin: 5px;
+}
+.icono-tecno4 {
+  width: 120px;
+  height: 80px;
+  padding: auto;
+  margin: 5px;
+}
+.icono-tecno5 {
+  width: 110px;
+  height: 80px;
+  padding: auto;
+  margin: 5px;
+}
+.icono-tecno6 {
+  width: 110px;
+  height: 90px;
+  padding: auto;
+  margin: 5px;
+}
+.icono-tecno7 {
+  width: 100px;
+  height: 70px;
+  padding: auto;
+  margin: 5px;
+}
+.icono-tecno8 {
+  width: 100px;
+  height: 70px;
+  padding: auto;
+  margin: 5px;
+}
+
+
 
 /* Testimonials Section
 --------------------------------*/
@@ -860,7 +1038,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
 }
 
-#contact .form #sendmessage {
+#contact  #sendmessage { /*se quitó clase form*/
   color: #03C4EB;
   border: 1px solid #03C4EB;
   display: none;
@@ -870,7 +1048,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
 }
 
-#contact .form #errormessage {
+#contact  #errormessage { /*se quitó clase form*/
   color: red;
   display: none;
   border: 1px solid red;
@@ -880,11 +1058,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
 }
 
-#contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
+#contact #sendmessage.show, #contact #errormessage.show, #contact .show { /*se quitó clase form*/
   display: block;
 }
 
-#contact .form .validation {
+#contact  .validation {/*se quitó clase form*/
   color: red;
   display: none;
   margin: 0 0 20px;
@@ -892,12 +1070,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
 }
 
-#contact .form input, #contact .form textarea {
+#contact  input, #contact   { /*se quitó clase form y textarea*/
   border-radius: 0;
   box-shadow: none;
 }
 
-#contact .form button[type="submit"] {
+#contact  button[type="submit"] {/*se quitó clase form*/
   background: #03C4EB;
   border: 0;
   padding: 10px 24px;
@@ -905,9 +1083,93 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.4s;
 }
 
-#contact .form button[type="submit"]:hover {
+#contact  button[type="submit"]:hover {/*se quitó clase form*/
   background: #25d8fc;
 }
+
+
+/* nuevo formulario*/
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    margin: 20px;
+    
+  }
+.input-group {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+}
+h2 {
+    color: #283629;
+    font-size: 35px;
+}
+label{
+    color: #283629;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #edfffd;
+    border: 6px solid #03c4eb;
+    color: #283629;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #b5cab6;
+}
+.form-txt {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+input .form-txt a{
+    color: #03C4EB;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn_form {
+    font-size:  16px;
+    color: #2e2b2b;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(49, 54, 49, 0.4);    
+    cursor: pointer;
+}
+
+.btn_form:hover {
+    background-color: #03C4EB;
+    cursor: pointer;
+}
+
+@media(max-width:991px){
+  
+    form {
+        padding: 50px 30px;
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    input {
+        padding: 15px;
+    }
+}
+
+
+/* fin nuevo formulario*/
+
 
 /*Documentos html*/
 
