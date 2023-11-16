@@ -407,6 +407,25 @@ button.aqui{
   }
 }
 
+#nav-menu-container_2 {
+  float: left;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  #nav-menu-container_2 {
+    display: none;
+  }
+}
+.container_2{
+  height: 220px;
+  background-color: red;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* Nav Meu Styling */
 .nav-menu a {
   padding: 10px 15px;
@@ -1226,3 +1245,6 @@ input .form-txt a{
   font-size: 13px;
   color: #ccc;
 }
+
+
+
