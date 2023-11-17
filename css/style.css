@@ -352,7 +352,10 @@ button.aqui{
   top: 100%;
   left: 0;
   z-index: 99;
+  margin: 4px 0 0 15px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
 }
+
 
 .nav-menu li {
   position: relative;
@@ -401,7 +404,12 @@ button.aqui{
   margin: 5px 0;
  
 }
-
+li .subtitle_tecno{
+  
+  text-align: center;
+  background-color  : rgb(0, 162, 255);
+  width: 100%;
+}
 @media (max-width: 768px) {
   #nav-menu-container {
     display: none;
@@ -469,7 +477,7 @@ li #nav-menu-container_2 {
 } 
 
 
-/* Nav Meu Styling */
+/* Nav Menu Styling */
 .nav-menu a {
   padding: 10px 15px;
   text-decoration: none;
@@ -485,10 +493,7 @@ li #nav-menu-container_2 {
   color: #03C4EB;
 }
 
-.nav-menu ul {
-  margin: 4px 0 0 15px;
-  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.08);
-}
+
 
 .nav-menu ul li {
   background: #fff;
@@ -502,12 +507,14 @@ li #nav-menu-container_2 {
 
 .nav-menu ul li:hover {
   background: #100e0e;
-}
+ 
+} 
 
 
 .nav-menu ul li a {
   color: #333;
 }
+
 
 .nav-menu ul ul {
   margin: 0;
