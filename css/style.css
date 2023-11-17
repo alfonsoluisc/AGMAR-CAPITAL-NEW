@@ -407,12 +407,20 @@ button.aqui{
     display: none;
   }
 }
+#nav-menu-container_2 li a {
+  color: #fff;
+  font-weight: 900;
+}
+
 
 #nav-menu-container_2 {
   float: left;
   margin: 5px 0;
   position: relative;
   z-index: 1;
+}
+li #nav-menu-container_2 {
+  color: #111;
 }
 
 
@@ -424,7 +432,7 @@ button.aqui{
 }
 .container_2{
   display: block;
-  height: 220px;
+  height: 270px;
   position: relative;
   background: url(../img/1.jpeg)no-repeat 100% 50%;
   background-size: 120%;
@@ -451,10 +459,15 @@ button.aqui{
       margin-left: (10px / 2);      
     }
   }
-
-  
- 
 }
+
+
+@media (max-width: 768px){
+  .container_2{
+    height: 230px;
+  }
+} 
+
 
 /* Nav Meu Styling */
 .nav-menu a {
@@ -484,11 +497,13 @@ button.aqui{
 
 .nav-menu ul li:first-child {
   border-top: 0;
+ 
 }
 
 .nav-menu ul li:hover {
-  background: #f6f6f6;
+  background: #100e0e;
 }
+
 
 .nav-menu ul li a {
   color: #333;
@@ -583,6 +598,7 @@ button.aqui{
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
   color: #03C4EB;
 }
+
 
 #mobile-nav ul .menu-item-active {
   color: #03C4EB;
