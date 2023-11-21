@@ -108,3 +108,9 @@ jQuery(document).ready(function( $ ) {
   });
 
 });
+
+   // PRETTYPHOTO FUNCTION 
+
+   $("a.preview").prettyPhoto({
+    social_tools: false
+});
