@@ -9,6 +9,7 @@ body {
  
 }
 
+
 a {
   color: #03C4EB;
   transition: 0.5s;
@@ -1478,6 +1479,7 @@ svg { /*se suspende img con relacion a archivo original zay*/
   display: block;
   margin-top: 0em;
   background-color:#03c4eb;
+  max-height: 15px;
 }
 
 .btn-lg {
@@ -1488,6 +1490,7 @@ svg { /*se suspende img con relacion a archivo original zay*/
   color: #fff;
  
 }
+
 .col-auto {
   flex: 0 0 auto;
   width: auto;
@@ -1526,3 +1529,4 @@ svg { /*se suspende img con relacion a archivo original zay*/
 .bg-light {
   background-color: #e9eef5 !important;
 }
+
