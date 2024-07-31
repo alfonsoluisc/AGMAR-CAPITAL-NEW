@@ -760,6 +760,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   
 }
 
+.arrendamiento_img{
+  background: url(../img/arrendamiento.jpg) left top no-repeat;
+  border-radius: 10px;
+  height: 500px;
+  object-fit: cover;
+}
+
 #about .about-container-consultorias{
   background: url(../img/consult-1.jpg) left top no-repeat;
   border-radius: 10px;
