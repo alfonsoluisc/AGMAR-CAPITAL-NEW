@@ -522,7 +522,7 @@ li #nav-menu-container_2 {
 }
 .container_2{
   display: block;
-  height: 270px;
+  height: 280px;
   position: relative;
   background: url(../img/1.jpeg)no-repeat 100% 50%;
   background-size: 120%;
@@ -554,7 +554,7 @@ li #nav-menu-container_2 {
 
 @media (max-width: 768px){
   .container_2{
-    height: 230px;
+    height: 260px;
   }
 } 
 
